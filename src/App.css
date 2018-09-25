@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+  background: #222;  
+}
+html.bottom {
+  background: #444;
+}
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+.routes {
+  background: linear-gradient(to bottom, #222 0%,#444 100%);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  padding: 20px 0 40px;
+  min-height: 100%;
+  box-sizing: border-box;
+  align-content: center;
+  min-width: 480px;
+}
+.route {
+  width: 200px;
+  height: 100px;
+  border-radius: 25px;
+  box-shadow: 0 10px 50px #00000066;
+  color: #fff;
+  text-align: center;
+  flex-shrink: 0;
+  margin: 20px 10px;
+}
+.route h1, .route h2 {
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: 'Helvetica', sans-serif;
+  margin: 10px 0;
+}
+.route .verb {
+  font-weight: 900;
+}
+.route .path {
+  margin-left: 15px;
+}
+.route.index {
+  background: #09f;
+  order: 1;
+}
+.route.show {
+  background: #eee;
+  color: #09f;
+  order: 4;
+}
+.route.new {
+  background: #7d0;
+  order: 3;
+}
+.route.create {
+  background: #fc0;
+  order: 6;
+}
+.route.edit {
+  background: #f70;
+  order: 7;
+}
+.route.update {
+  background: #f04;
+  order: 5;
+}
+.route.destroy {
+  background: #d3c;
+  order: 2;
+}
+.index, .show, .edit {
+  margin: 0 50vw;
+}
